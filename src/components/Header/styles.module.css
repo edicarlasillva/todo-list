@@ -1,0 +1,47 @@
+.header {
+  background: var(--gray-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 12.5rem; 
+  position: relative;
+}
+
+.newTask {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  position: absolute;
+  height: 3.375rem;
+  bottom: calc(-3.375rem / 2);
+  width: 100%;
+  max-width: 46rem;
+  padding: 0 1rem;
+}
+
+.newTask input {
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+  line-height: 140%;
+  color: var(--gray-300);
+  font-size: 1rem;
+  flex: 1;
+}
+
+.newTask button {
+  background: var(--blue-dark);
+  border: 0;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--gray-200);
+  line-height: 140%;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 1rem;
+}

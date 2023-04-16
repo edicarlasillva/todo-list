@@ -1,0 +1,59 @@
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background: var(--gray-500);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+  line-height: 140%;
+}
+
+.wrapper > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.wrapper input[type="checkbox"] {
+  border: 2px solid var(--blue);
+  appearance: none;
+  background: transparent;
+  color: var(--white);
+  width: 1.125em;
+  height: 1.125em;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.wrapper input[type="checkbox"]:checked  {
+  content: "";
+  width: 1.125em;
+  height: 1.125em;
+  border-radius: 100%;
+  transition: 120ms transform ease-in-out;
+  background-color: var(--purple-dark);
+  border: 2px solid transparent;
+}
+
+.wrapper p {
+  color: var(--gray-200);
+  font-size: 0.875rem;
+}
+
+.wrapper p.completed {
+  color: var(--gray-300);
+  text-decoration-line: line-through;  
+}
+
+.deleteTask {
+  background: transparent;
+  cursor: pointer;
+  border: 0;
+  color: var(--gray-300);
+  line-height: 0;
+  border-radius: 2px;
+}
